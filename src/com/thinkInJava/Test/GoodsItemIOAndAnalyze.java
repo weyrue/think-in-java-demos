@@ -16,7 +16,7 @@ import static com.thinkInJava.Chapter6.Print.print;
 public class GoodsItemIOAndAnalyze {
     public static void main(String[] args) {
         String parentURL = "C:\\Users\\admin\\Desktop\\5497MDM\\MDM文件";
-        String childURL = "54971278067152749394241--4901325b.150801f9c3b.5908.xml";
+        String childURL = "物资.xml";
 
 //        String text = readTextFromFile(parentURL, childURL);
 
