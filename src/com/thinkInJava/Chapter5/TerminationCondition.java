@@ -23,7 +23,7 @@ class Book {
         checkedOut = false;
     }
 
-    protected void finalize() {
-        if (checkedOut) System.out.println("Error: checked out");
-    }
+//    protected void finalize() {
+//        if (checkedOut) System.out.println("Error: checked out");
+//    }
 }
