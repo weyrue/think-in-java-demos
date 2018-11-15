@@ -55,4 +55,5 @@ public class ShowMethods {
             "ShowMethods qualifieds.class.word\n" +
             "To search for methods involving 'word'";
     private static Pattern p = Pattern.compile("\\w+\\.");
+
 }
