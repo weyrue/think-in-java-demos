@@ -1,22 +1,22 @@
 package com.thinkInJava.LeetCode;
 
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Problem3LongestSubstringWithoutRepeatingCharacters {
 
     public static void main(String[] args) {
-        String s = "tmmzuxt";
+        String s = "tmmzuxtm";
         System.out.println("maxLength: " + lengthOfLongestSubstring(s));
     }
 
     public static int lengthOfLongestSubstring(String s) {
         int startPos = 0;
         int maxLength = 0;
-        Map<Character, Integer> characterIntegerMap = new LinkedHashMap<>();
+        Map<Character, Integer> characterIntegerMap = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if (characterIntegerMap.containsKey(c)) {
+            if (characterIntegerMap.containsKey(c) && characterIntegerMap.get(c) >= startPos) {
                 int tempLength = i - startPos;
                 if (tempLength > maxLength) {
                     maxLength = tempLength;
