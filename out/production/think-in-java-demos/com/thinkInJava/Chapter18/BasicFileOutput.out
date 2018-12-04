@@ -1,0 +1,21 @@
+1: package com.thinkInJava.Chapter18;
+2: 
+3: import java.io.*;
+4: 
+5: public class BasicFileOutput {
+6:     public static void main(String[] args) throws IOException {
+7:         String file = "BasicFileOutput.out";
+8:         String currentDir = "./src/com/thinkInJava/Chapter18/";
+9:         BufferedReader in = new BufferedReader(new StringReader(BufferedInputFile.read(currentDir + "BasicFileOutput.java")));
+10: 
+11:         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(currentDir + file)));
+12:         int lineCount = 1;
+13:         String s;
+14:         while ((s = in.readLine()) != null) {
+15:             out.println(lineCount++ + ": " + s);
+16:         }
+17:         out.close();
+18:         System.out.println(BufferedInputFile.read(currentDir + file));
+19:         in.close();
+20:     }
+21: }
