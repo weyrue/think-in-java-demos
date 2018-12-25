@@ -1,4 +1,4 @@
-package com.thinkInJava.Chapter19;
+package com.thinkInJava.Chapter19.WaxOMatic;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
